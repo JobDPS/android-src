@@ -8,10 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     MaterialToolbar topAppBar;
+    NavigationView navBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         topAppBar = (MaterialToolbar) findViewById(R.id.topAppBar);
+        navBar = (NavigationView) findViewById(R.id.navigationView);
 
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,11 +35,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-//                    case R.id.favorite:
-//                        // Handle favorite icon press
-//
-//                        break;
-
                     case R.id.search:
                         // Handle search icon press
 
@@ -49,8 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 return true;
             }
-
-
         });
     }
 }
