@@ -8,4 +8,10 @@
 
     <string name="nav_header_title">JobDPS</string>
     <string name="nav_title_1">Home</string>
+    <string name="nav_title_2">Explore</string>
+    <string name="nav_title_3">Social</string>
+    <string name="nav_title_4">GET PAGE NAMES</string>
+
+    <string name="openNavDrawer">Nav Drawer Open</string>
+    <string name="closeNavDrawer">Nav Drawer Closed</string>
 </resources>
