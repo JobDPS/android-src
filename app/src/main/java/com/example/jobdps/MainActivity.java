@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -32,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         setSupportActionBar(topAppBar);
-//        getSupportActionBar().setLogo(R.drawable.jobdps_logo);
-//        getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-//        topAppBar.setLogoScaleType(ImageView.ScaleType.FIT_START);
 
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,5 +67,12 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.top_app_bar, menu);
+        return true;
     }
 }
