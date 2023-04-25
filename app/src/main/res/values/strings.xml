@@ -14,4 +14,7 @@
 
     <string name="openNavDrawer">Nav Drawer Open</string>
     <string name="closeNavDrawer">Nav Drawer Closed</string>
+
+    <string name="home_fragment">Home fragment</string>
+    <string name="explore_fragment">Explore fragment</string>
 </resources>
