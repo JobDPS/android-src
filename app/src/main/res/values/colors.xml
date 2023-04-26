@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primaryBlue">#00bcd4</color>
     <color name="primaryBlueVariant">#0081a1</color>
+    <color name="landingBackground">#00252e</color>
 </resources>

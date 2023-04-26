@@ -19,4 +19,9 @@
 
     <string name="home_fragment">Home fragment</string>
     <string name="explore_fragment">Explore fragment</string>
+
+    <string name="landing_header">Tired of using spreadsheets?</string>
+    <string name="landing_subtext">JobDPS is the multiplatform tool to help discuss, plan,
+                                    and schedule everything involved in your job search - without a messy spreadsheet.</string>
+    <string name="landing_button">GET STARTED</string>
 </resources>

@@ -15,9 +15,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.internal.NavigationMenuItemView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private MaterialToolbar topAppBar;
     private NavigationView navBar;
     private DrawerLayout drawerLayout;
+    private Button landingButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +37,16 @@ public class MainActivity extends AppCompatActivity {
         topAppBar = (MaterialToolbar) findViewById(R.id.topAppBar);
         navBar = (NavigationView) findViewById(R.id.navigationView);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        landingButton = (Button) findViewById(R.id.landing_button);
 
         setSupportActionBar(topAppBar);
+
+        landingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHomePage();
+            }
+        });
 
         topAppBar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.search:
-                        // Handle search icon press
+                    case R.id.profile:
+                        // Handle profile icon press
 
                         break;
 
@@ -65,9 +76,6 @@ public class MainActivity extends AppCompatActivity {
         navBar.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//                item.setChecked(true);
-//                drawerLayout.close();
-//                return true;
                 selectDrawerFragment(item);
                 return true;
             }
@@ -91,6 +99,22 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void openHomePage() {
+        Class homeFragmentClass = HomeFragment.class;
+        Fragment fragment = null;
+
+        try {
+            fragment = (Fragment) homeFragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.cLayout, fragment).commit();
+
+        navBar.getMenu().findItem(R.id.nav_item1).setChecked(true);
     }
 
     public void selectDrawerFragment(MenuItem menuItem) {
