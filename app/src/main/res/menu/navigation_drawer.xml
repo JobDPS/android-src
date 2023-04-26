@@ -6,31 +6,26 @@
         <item
             android:id="@+id/nav_item1"
             android:icon="@drawable/home_icon_24dp"
-            android:title="@string/nav_title_1"
-            android:checked="true" />
+            android:title="@string/nav_title_1" />
         <item
             android:id="@+id/nav_item2"
             android:icon="@drawable/explore_icon_24dp"
             android:title="@string/nav_title_2" />
         <item
             android:id="@+id/nav_item3"
-            android:icon="@drawable/person_icon_24dp"
+            android:icon="@drawable/discuss_icon_24dp"
             android:title="@string/nav_title_3" />
         <item
             android:id="@+id/nav_item4"
-            android:icon="@drawable/explore_icon_24dp"
+            android:icon="@drawable/note_icon_24dp"
             android:title="@string/nav_title_4" />
         <item
             android:id="@+id/nav_item5"
-            android:icon="@drawable/explore_icon_24dp"
+            android:icon="@drawable/calendar_icon_24dp"
             android:title="@string/nav_title_5" />
         <item
             android:id="@+id/nav_item6"
-            android:icon="@drawable/explore_icon_24dp"
+            android:icon="@drawable/apartment_icon_24dp"
             android:title="@string/nav_title_6" />
-        <item
-            android:id="@+id/nav_item7"
-            android:icon="@drawable/explore_icon_24dp"
-            android:title="@string/nav_title_7" />
     </group>
 </menu>

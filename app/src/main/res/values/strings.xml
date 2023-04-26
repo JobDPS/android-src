@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">JobDPS</string>
     <string name="page_title">JobDPS</string>
-    <string name="search">Search</string>
+    <string name="profile">Profile</string>
     <string name="more">More</string>
-    <string name="content_description_search">Search within application</string>
+    <string name="content_description_profile">Your profile</string>
     <string name="content_description_more">More options</string>
 
     <string name="nav_header_title">JobDPS</string>
@@ -12,8 +12,7 @@
     <string name="nav_title_3">Discuss</string>
     <string name="nav_title_4">Plan</string>
     <string name="nav_title_5">Schedule</string>
-    <string name="nav_title_6">Social</string>
-    <string name="nav_title_7">Companies</string>
+    <string name="nav_title_6">Companies</string>
 
     <string name="openNavDrawer">Nav Drawer Open</string>
     <string name="closeNavDrawer">Nav Drawer Closed</string>

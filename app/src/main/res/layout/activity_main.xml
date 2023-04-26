@@ -27,7 +27,7 @@
                 android:id="@+id/topAppBar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:navigationIcon="@drawable/menu_icon_24dp"
+                app:navigationIcon="@drawable/menu_icon_36dp"
                 app:title="@string/page_title"
                 style="@style/Widget.MaterialComponents.Toolbar.Primary" />
 

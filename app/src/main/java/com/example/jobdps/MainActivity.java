@@ -114,9 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = ScheduleFragment.class;
                 break;
             case R.id.nav_item6:
-                fragmentClass = SocialFragment.class;
-                break;
-            case R.id.nav_item7:
                 fragmentClass = CompaniesFragment.class;
                 break;
             default:
