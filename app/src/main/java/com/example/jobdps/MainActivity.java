@@ -104,6 +104,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_item2:
                 fragmentClass = ExploreFragment.class;
                 break;
+            case R.id.nav_item3:
+                fragmentClass = DiscussFragment.class;
+                break;
+            case R.id.nav_item4:
+                fragmentClass = PlanFragment.class;
+                break;
+            case R.id.nav_item5:
+                fragmentClass = ScheduleFragment.class;
+                break;
+            case R.id.nav_item6:
+                fragmentClass = SocialFragment.class;
+                break;
+            case R.id.nav_item7:
+                fragmentClass = CompaniesFragment.class;
+                break;
             default:
                 fragmentClass = HomeFragment.class;
         }
