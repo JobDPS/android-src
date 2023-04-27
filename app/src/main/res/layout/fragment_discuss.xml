@@ -323,104 +323,104 @@
                         android:layout_marginVertical="5dp"/>
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/post_border">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingHorizontal="5dp"
-                    android:paddingVertical="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:layout_marginVertical="5dp"
-                    android:background="@drawable/post_border">
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/no_img"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="10dp">
 
-                        <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
-                            android:src="@drawable/no_img"/>
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:paddingHorizontal="10dp">
+                            android:layout_height="wrap_content"
+                            android:text="user"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:paddingBottom="10dp"/>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="user"
-                                android:textSize="20sp"
-                                android:textStyle="bold"
-                                android:paddingBottom="10dp"/>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Posted 1 day ago"/>
-                        </LinearLayout>
-
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Posted 1 day ago"/>
                     </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is a post!"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 Likes"
+                    android:textSize="15sp"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="This is a post!"
-                        android:textStyle="bold"
-                        android:textSize="20sp"
-                        android:paddingHorizontal="5dp"
-                        android:paddingVertical="5dp"/>
+                        android:minWidth="120dp"
+                        android:text="Like"
+                        android:drawableLeft="@drawable/thumb_up_icon_24dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"/>
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 Likes"
-                        android:textSize="15sp"
-                        android:paddingHorizontal="5dp"
-                        android:paddingVertical="5dp"/>
+                        android:minWidth="120dp"
+                        android:text="Comment"
+                        android:drawableLeft="@drawable/chat_icon_24dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:minWidth="120dp"
-                            android:text="Like"
-                            android:drawableLeft="@drawable/thumb_up_icon_24dp"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="10dp"
-                            android:layout_marginHorizontal="5dp"
-                            android:layout_marginVertical="5dp"/>
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:minWidth="120dp"
-                            android:text="Comment"
-                            android:drawableLeft="@drawable/chat_icon_24dp"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="10dp"
-                            android:layout_marginHorizontal="5dp"
-                            android:layout_marginVertical="5dp"/>
-
-                        <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:minWidth="120dp"
-                            android:text="Share"
-                            android:drawableLeft="@drawable/link_icon_24dp"
-                            android:paddingHorizontal="10dp"
-                            android:paddingVertical="10dp"
-                            android:layout_marginHorizontal="5dp"
-                            android:layout_marginVertical="5dp"/>
-                    </LinearLayout>
-
+                        android:minWidth="120dp"
+                        android:text="Share"
+                        android:drawableLeft="@drawable/link_icon_24dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"/>
                 </LinearLayout>
 
             </LinearLayout>
